@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../components/Section";
 import { notes } from "../data/notes";
 import NoteCard from "../components/Cards/NoteCard";

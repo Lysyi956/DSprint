@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../components/Section";
 import { lessons } from "../data/lessons";
 import LessonCard from "../components/Cards/LessonCard";

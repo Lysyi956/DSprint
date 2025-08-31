@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import { lessons } from "../data/lessons";

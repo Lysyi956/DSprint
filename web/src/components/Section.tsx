@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Section({ title, subtitle, children }:{title:string;subtitle?:string;children:React.ReactNode}) {
   return (

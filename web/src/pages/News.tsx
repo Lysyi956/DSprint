@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../components/Section";
 import { news } from "../data/news";
 import NewsItem from "../components/Cards/NewsItem";
