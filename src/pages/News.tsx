@@ -1,13 +1,19 @@
-import Section from "../components/Section";
-import { news } from "../data/news";
-import NewsItem from "../components/Cards/NewsItem";
-
 export default function News() {
+  const news = [
+    { t:'New cohort dates announced', d:'Sep 13 — Oct 13' },
+    { t:'Added fresh notes for Pandas lesson', d:'check Notes page' },
+  ]
   return (
-    <Section title="News & Updates" subtitle="Cohort announcements, changes, highlights">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {news.map((n) => <NewsItem key={`${n.title}-${n.date}`} item={n} />)}
+    <div className="container">
+      <h1 className="h1">News</h1>
+      <div className="grid">
+        {news.map((n,i)=>(
+          <div className="card" key={i}>
+            <h3>{n.t}</h3>
+            <p className="muted">{n.d}</p>
+          </div>
+        ))}
       </div>
-    </Section>
-  );
+    </div>
+  )
 }

@@ -1,13 +1,19 @@
-import Section from "../components/Section";
-import { notes } from "../data/notes";
-import NoteCard from "../components/Cards/NoteCard";
-
 export default function Notes() {
+  const notes = [
+    { t:'Python EDA — quick notes', link:'#' },
+    { t:'Pandas essentials', link:'#' },
+  ]
   return (
-    <Section title="Notes & Summaries" subtitle="Concise notes to revise the key ideas faster">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {notes.map((x) => <NoteCard key={x.title} note={x} />)}
+    <div className="container">
+      <h1 className="h1">Notes</h1>
+      <div className="grid">
+        {notes.map((n,i)=>(
+          <a className="card" key={i} href={n.link}>
+            <h3>{n.t}</h3>
+            <p className="muted">Open</p>
+          </a>
+        ))}
       </div>
-    </Section>
-  );
+    </div>
+  )
 }
