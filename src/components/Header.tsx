@@ -33,7 +33,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="header-cta">
-          <a className="btn" href="https://t.me/your_channel" target="_blank" rel="noreferrer">Join Telegram</a>
+          <a className="btn" href="https://t.me/DataScienceSprint" target="_blank" rel="noreferrer">Join Telegram</a>
         </div>
       </div>
     </header>
